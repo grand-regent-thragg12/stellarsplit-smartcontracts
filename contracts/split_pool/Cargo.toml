@@ -1,0 +1,15 @@
+[package]
+name = "split_pool"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = { workspace = true }
+token_router = { path = "../token_router" }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true }
+token_router = { path = "../token_router" }
